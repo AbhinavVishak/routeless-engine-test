@@ -7,6 +7,15 @@ export default class App extends Application {
   modulePrefix = config.modulePrefix;
   podModulePrefix = config.podModulePrefix;
   Resolver = Resolver;
+  engines = {
+    'routable-engine': {
+      dependencies: {
+        services: [
+          'asset-loader',
+        ]
+      }
+    }
+  }
 }
 
 loadInitializers(App, config.modulePrefix);
