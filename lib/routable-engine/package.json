@@ -1,0 +1,12 @@
+{
+  "name": "routable-engine",
+  "keywords": [
+    "ember-addon",
+    "ember-engine"
+  ],
+  "dependencies": {
+    "ember-lazy-mount": "*",
+    "ember-cli-htmlbars": "*",
+    "ember-cli-babel": "*"
+  }
+}

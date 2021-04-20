@@ -39,8 +39,10 @@
     "ember-cli-sri": "^2.1.1",
     "ember-cli-terser": "^4.0.1",
     "ember-data": "~3.26.0",
+    "ember-engines": "^0.8.13",
     "ember-export-application-global": "^2.0.1",
     "ember-fetch": "^8.0.4",
+    "ember-lazy-mount": "^0.8.0",
     "ember-load-initializers": "^2.1.2",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-page-title": "^6.2.1",
@@ -65,5 +67,11 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "ember-addon": {
+    "paths": [
+      "lib/routable-engine",
+      "lib/routeless-engine"
+    ]
   }
 }

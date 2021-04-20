@@ -1,0 +1,10 @@
+<h2>This is host-route.hbs</h2>
+{{#lazy-mount 'routeless-engine' as |engine|}}
+  {{#if engine.isLoading}}
+    🕑 The engine is loading...
+  {{else if engine.error}}
+    😨 There was an error loading the engine:
+    <code>{{engine.error}}</code>
+  {{/if}}
+{{/lazy-mount}}
+{{outlet}}
